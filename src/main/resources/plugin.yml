@@ -1,0 +1,16 @@
+name: DoubleCrouchOffhand
+version: 1.0.0
+main: dev.dco.DoubleCrouchOffhand
+api-version: '26.1'
+description: Double-tap crouch to swap main hand and offhand items.
+commands:
+  dco:
+    description: Toggle or reload double-crouch offhand swap
+    usage: /dco [toggle|reload]
+permissions:
+  doublecrouchoffhand.use:
+    description: Allows the double-crouch swap (only checked if require-permission is true)
+    default: true
+  doublecrouchoffhand.admin:
+    description: Allows /dco reload
+    default: op
