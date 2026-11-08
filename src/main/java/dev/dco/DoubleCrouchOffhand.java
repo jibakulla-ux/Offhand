@@ -33,6 +33,7 @@ public final class DoubleCrouchOffhand extends JavaPlugin implements Listener {
         saveConfig();
         loadSettings();
         getServer().getPluginManager().registerEvents(this, this);
+        getServer().getPluginManager().registerEvents(new DamageBoost(this), this);
     }
 
     private void loadSettings() {
